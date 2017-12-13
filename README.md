@@ -1,11 +1,11 @@
 # Android Studio in Docker via VNC
 
-[[https://user-images.githubusercontent.com/468515/33925524-0b38012c-df8f-11e7-950a-8b3cfaf495fc.png|alt=screenshot]]
+![screenshot](https://user-images.githubusercontent.com/468515/33925524-0b38012c-df8f-11e7-950a-8b3cfaf495fc.png)
 
 
 ### Prerequisites
 
-- Make sure you have KVM installed properly in the host
+- Make sure you have `KVM` installed properly in the host ([KVM installation for Ubuntu](https://help.ubuntu.com/community/KVM/Installation))
 - The current user `$USER` have enough permission to access `/dev/kvm`
 
 ### Usage
