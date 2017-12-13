@@ -1,5 +1,7 @@
 # Android Studio in Docker via VNC
 
+This image helps you to bootstrap your Android development environment in the remote host.
+
 ![screenshot](https://user-images.githubusercontent.com/468515/33925524-0b38012c-df8f-11e7-950a-8b3cfaf495fc.png)
 
 
@@ -10,19 +12,13 @@
 
 ### Usage
 
-1. Create folder for android-studio and all the correlated folders
-
-   ```bash
-   mkdir $HOME/android
-   ```
-
-2. Download Android Studio and unzip the archive
+1. Download and Install `Android Studio` in the remote host
 
    ```bash
    unzip android-studio-ide-XXX-linux.zip -d $HOME/android
    ```
 
-3. Start VNC server
+1. Start VNC server
 
    ```bash
    docker run -d \
@@ -38,11 +34,11 @@
        ljishen/vnc-android-studio
    ```
 
-4. Connect via VNC viewer
+1. Connect to the remote host via VNC viewer
 
    `[HOST_IP]:5901`, default password: `vncpassword`
 
-5. Launch Android Studio via command line
+1. Launch Android Studio via command line
 
    ```bash
    studio.sh
