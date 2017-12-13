@@ -15,4 +15,5 @@ RUN apt-get clean \
 USER 1984
 
 ENV PATH=$PATH:/headless/android-studio/bin \
-    ANDROID_AVD_HOME=/root/.android/avd
+    ANDROID_AVD_HOME=/root/.android/avd \
+    ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
