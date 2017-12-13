@@ -5,8 +5,8 @@
 
 ### Prerequisites
 
-- Make sure you have `KVM` installed properly in the host ([KVM installation for Ubuntu](https://help.ubuntu.com/community/KVM/Installation))
-- The current user `$USER` have enough permission to access `/dev/kvm`
+- Make sure you have `KVM` installed properly in the host (e.g. [KVM installation for Ubuntu](https://help.ubuntu.com/community/KVM/Installation))
+- The current user `$USER` has enough permission to access `/dev/kvm`
 
 ### Usage
 
