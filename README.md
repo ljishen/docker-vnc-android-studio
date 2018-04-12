@@ -10,6 +10,7 @@ This image helps you to bootstrap your Android development environment in the re
 - Make sure you have `KVM` installed properly in the host (e.g. [KVM installation for Ubuntu](https://help.ubuntu.com/community/KVM/Installation))
 - The current user `$USER` has enough permission to access `/dev/kvm`
 
+
 ### Usage
 
 1. Download and Install `Android Studio` in the remote host
@@ -38,8 +39,17 @@ This image helps you to bootstrap your Android development environment in the re
 
    `[HOST_IP]:5901`, default password: `vncpassword`
 
+   You can also connect via browsing
+
+   `http://[HOST_IP]:6901/vnc.html`, default password: `vncpassword`
+
 1. Launch Android Studio via command line
 
    ```bash
    studio.sh
    ```
+
+
+### Credit
+
+- More configurations and options can be found from [docker-headless-vnc-container](https://github.com/ConSol/docker-headless-vnc-container)

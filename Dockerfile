@@ -1,6 +1,6 @@
 FROM consol/ubuntu-xfce-vnc
 MAINTAINER Jianshen Liu "jliu120@ucsc.edu"
-ENV REFRESHED_AT 2017-12-12
+ENV REFRESHED_AT 2018-04-12
 
 USER 0
 RUN apt-get update && \
@@ -12,7 +12,7 @@ RUN apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ## switch back to default user
-USER 1984
+USER 1000
 
 ENV PATH=$PATH:/headless/android-studio/bin \
     ANDROID_AVD_HOME=/root/.android/avd \
