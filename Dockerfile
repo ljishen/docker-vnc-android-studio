@@ -5,10 +5,11 @@ ENV REFRESHED_AT 2018-04-12
 USER 0
 RUN dpkg --add-architecture i386 && \
     apt-get update && apt-get install -y \
-	libc6:i386 \
-	libncurses5:i386 \
-	libstdc++6:i386 \
-	lib32z1 libbz2-1.0:i386
+    libc6:i386 \
+    libncurses5:i386 \
+    libstdc++6:i386 \
+    lib32z1 \
+    libbz2-1.0:i386
 
 ## Clean Up
 RUN apt-get clean \
