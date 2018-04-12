@@ -13,26 +13,16 @@ This image helps you to bootstrap your Android development environment in the re
 
 ### Usage
 
-1. Download and Install `Android Studio` in the remote host
+1. Download and extract the [Android Studio](https://developer.android.com/studio/index.html) `.zip` bundle in the remote host
 
    ```bash
-   unzip android-studio-ide-XXX-linux.zip -d $HOME/android
+   unzip android-studio-ide-XXX.XXXXXXX-linux.zip -d $HOME/android
    ```
 
-1. Start VNC server
+1. Start VNC server with the `run` script
 
    ```bash
-   docker run -d \
-       --privileged \
-       --user 0 \
-       -v $HOME/android/android-studio:/headless/android-studio \
-       -v $HOME/android/.AndroidStudio3.0:/root/.AndroidStudio3.0 \
-       -v $HOME/android/Android:/root/Android \
-       -v $HOME/android/.gradle:/root/.gradle \
-       -v $HOME/android/.android:/root/.android \
-       -p 5901:5901 \
-       -p 6901:6901 \
-       ljishen/vnc-android-studio
+   ./run
    ```
 
 1. Connect to the remote host via VNC viewer

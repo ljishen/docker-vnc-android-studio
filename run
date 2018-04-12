@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -eu
+
+CONFIG_FOLDER=.$(grep -oP 'idea.paths.selector=\K[\w\.\d]+' "$HOME"/android/android-studio/bin/studio.sh)
+
+docker run -d \
+    --privileged \
+    --user 0 \
+    -v $HOME/android/android-studio:/headless/android-studio \
+    -v $HOME/android/$CONFIG_FOLDER:/root/$CONFIG_FOLDER \
+    -v $HOME/android/Android:/root/Android \
+    -v $HOME/android/.gradle:/root/.gradle \
+    -v $HOME/android/.android:/root/.android \
+    -p 5901:5901 \
+    -p 6901:6901 \
+    ljishen/vnc-android-studio
