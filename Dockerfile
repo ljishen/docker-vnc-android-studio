@@ -3,7 +3,8 @@ MAINTAINER Jianshen Liu "jliu120@ucsc.edu"
 ENV REFRESHED_AT 2018-04-12
 
 USER 0
-RUN apt-get update && apt-get install -y \
+RUN dpkg --add-architecture i386 && \
+    apt-get update && apt-get install -y \
 	libc6:i386 \
 	libncurses5:i386 \
 	libstdc++6:i386 \
