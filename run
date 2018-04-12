@@ -4,7 +4,7 @@ set -eu
 
 CONFIG_FOLDER=.$(grep -oP 'idea.paths.selector=\K[\w\.\d]+' "$HOME"/android/android-studio/bin/studio.sh)
 
-docker run -d \
+docker run \
     --privileged \
     --user 0 \
     -v $HOME/android/android-studio:/headless/android-studio \
