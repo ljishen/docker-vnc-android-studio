@@ -33,7 +33,7 @@ This image helps you to bootstrap your Android development environment in the re
 
    `http://[HOST_IP]:6901/vnc.html`, default password: `vncpassword`
 
-1. Launch Android Studio via command line
+1. You should see the Android Studio already started on the desktop, otherwaise you can launch it via command line
 
    ```bash
    studio.sh

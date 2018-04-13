@@ -19,3 +19,5 @@ RUN apt-get clean \
 ENV PATH=$PATH:/root/android-studio/bin \
     ANDROID_SDK_HOME=/headless \
     ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
+
+RUN printf "\\n\\n# Startup Program\\nstudio.sh &> %s/androidstudio_startup.log &" "$STARTUPDIR" >> "$HOME"/wm_startup.sh
